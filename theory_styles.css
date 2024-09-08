@@ -26,11 +26,12 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    height: auto;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
 }
 
 .content {
@@ -112,7 +113,7 @@ footer a:hover {
 /* Адаптивность */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     h2 {
