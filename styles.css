@@ -1,0 +1,132 @@
+/* Общие стили страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url('background.png') no-repeat center center fixed; /* Указываем изображение */
+    background-size: cover; /* Масштабируем изображение по размеру экрана */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Фиксированный заголовок */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для контраста с фоном */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Hero section - центральная часть с призывом к действию */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Прозрачный слой для читаемости текста */
+    border-radius: 15px;
+}
+
+.content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Кнопка "Перейти к меню" */
+.cta-button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background-color: #ff4081; /* Яркий акцент на кнопке */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff79a1; /* Легкое изменение цвета при наведении */
+}
+
+/* Подвал */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон для контраста */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .content h2 {
+        font-size: 2.2rem;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}

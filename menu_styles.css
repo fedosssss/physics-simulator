@@ -1,0 +1,131 @@
+/* Общие стили страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url('background.png') no-repeat center center fixed; /* То же фоновое изображение */
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Фиксированный заголовок */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Основной контент - меню */
+.menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6); /* Прозрачный блок */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Меню навигации */
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #ff4081;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #ff79a1; /* Легкое изменение цвета при наведении */
+}
+
+/* Подвал */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .menu ul li a {
+        padding: 12px 25px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu ul li a {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+}
