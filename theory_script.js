@@ -4,11 +4,9 @@ const hoverElements = document.querySelectorAll('.hover-img');
 hoverElements.forEach(element => {
     element.addEventListener('mouseenter', function() {
         const imgSrc = this.getAttribute('data-img');
-        this.style.position = 'relative';
+        this.style.position = 'fixed';
         this.setAttribute('style', `content: url(${imgSrc});`);
     });
 
-    element.addEventListener('mouseleave', function() {
-        this.removeAttribute('style');
-    });
+    
 });
